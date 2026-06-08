@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>Dashboard</title>
+</head>
+<body>
+
+<h2>Welcome to Dashboard 🎉</h2>
+
+<p id="username"></p>
+<p id="file"></p>
+
+<br>
+
+<a href="login.html">Logout</a>
+
+<script>
+  const params = new URLSearchParams(window.location.search);
+
+  const name = params.get("name");
+  const fileUrl = params.get("fileUrl");
+
+  document.getElementById("username").innerText =
+    "Name: " + (name ? name : "User");
+
+  if (fileUrl && fileUrl !== "undefined" && fileUrl !== "") {
+    document.getElementById("file").innerHTML =
+      "File: <a href='" + fileUrl + "' target='_blank'>View File</a>";
+  } else {
+    document.getElementById("file").innerHTML =
+      "No form submitted yet.<br> <br> <a href='form.html'>Fill Admission Form</a>";
+  }
+</script>
+
+</body>
+</html>

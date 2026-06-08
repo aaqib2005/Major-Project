@@ -1,0 +1,61 @@
+<html>
+<head>
+<title> Form </title>
+</head>
+<body>
+
+<form action="http://localhost:3000/upload" method="POST" enctype="multipart/form-data">
+
+Name: <input type="text" name="name" required> <br><br>
+
+Father Name: <input type="text" name="fatherName" required> <br><br>
+
+Mobile No: <input type="number" name="mobile" required> <br><br>
+
+Email: <input type="email" name="email" required> <br><br>
+
+Create Password: <input type="password" name="password" required> <br><br>
+
+Gender:
+<input type="radio" name="gender" value="male"> Male
+<input type="radio" name="gender" value="female"> Female
+<br><br>
+
+Religion:
+<select name="religion">
+<option value="hindu">Hindu</option>
+<option value="muslim">Muslim</option>
+<option value="sikh">Sikh</option>
+<option value="christian">Christian</option>
+<option value="other">Other</option>
+</select>
+<br><br>
+
+Stream:
+<select name="stream">
+<option value="pcm">PCM</option>
+<option value="pcb">PCB</option>
+<option value="commerce">Commerce</option>
+<option value="humanity">Humanity</option>
+</select>
+<br><br>
+
+Facilities:
+<input type="checkbox" name="hostel" value="yes"> Hostel
+<input type="checkbox" name="transport" value="yes"> Transport
+<input type="checkbox" name="library" value="yes"> Library
+<br><br>
+
+Upload File:
+<input type="file" name="file" required>
+<br><br>
+
+<input type="submit" value="Submit">
+
+</form>
+
+<br>
+<a href="homepage.html"><h3>Back to Home</h3></a>
+
+</body>
+</html>

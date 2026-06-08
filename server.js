@@ -25,7 +25,7 @@ const upload = multer({ storage: multer.memoryStorage() });
 
 // Test route
 app.get('/', (req, res) => {
-  res.send("Backend is running 🚀");
+  res.redirect('/homepage.html');
 });
 
 // Upload + Save Data route
